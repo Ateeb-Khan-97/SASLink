@@ -1,0 +1,220 @@
+.login-header {
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 30px 30px;
+}
+
+.login-header a {
+  position: absolute;
+  left: 20px;
+  font-size: 3rem;
+  color: #fff;
+  cursor: default;
+  transition: 0.3s all;
+  display: flex;
+}
+.login-header a:hover {
+  transform: scale(1.5);
+}
+
+.login-header .login-logo-wrapper {
+  width: 180px;
+}
+
+.login-logo-wrapper img {
+  height: 100%;
+  width: 100%;
+}
+
+.login-main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-gradient);
+}
+.login-main::before {
+  content: '';
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.459);
+  backdrop-filter: blur(10px);
+}
+
+.login-main .login-container {
+  z-index: 4;
+  width: 500px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 30px 45px 30px;
+  background-color: rgba(255, 255, 255, 0.432);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.login-container h1 {
+  margin-bottom: 30px;
+  font-size: 2.3rem;
+  color: var(--blue);
+}
+
+.login-container .login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form .login-input-div {
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 1.5rem;
+  border: 2px solid var(--blue);
+  position: relative;
+}
+
+.login-form .login-input-div:nth-child(1)::before {
+  content: 'User Id';
+  font-weight: 500;
+  color: var(--blue);
+  position: absolute;
+  left: 30px;
+  top: -15px;
+  background: #7eaca2;
+  padding: 0px 10px;
+}
+
+.login-form .login-input-div:nth-child(2) {
+  margin-bottom: 10px;
+}
+.login-form .login-input-div:nth-child(2)::before {
+  content: 'Password';
+  font-weight: 500;
+  color: var(--blue);
+  position: absolute;
+  left: 30px;
+  top: -15px;
+  background: #7eaca2;
+  padding: 0px 10px;
+}
+
+.login-input-div input {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 65px;
+  padding: 0px 20px;
+  background-color: transparent;
+  font-weight: 500;
+  color: var(--blue);
+  font-size: 1.1rem;
+}
+.login-input-div input::placeholder {
+  font-weight: 500;
+  color: #3f556e;
+}
+
+.login-form .login-remember-wrapper {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-remember-wrapper .login-checkbox-div {
+  display: flex;
+  align-items: center;
+}
+
+.login-checkbox-div input {
+  height: 18px;
+  width: 18px;
+  margin-right: 5px;
+}
+
+.login-checkbox-div label {
+  color: var(--blue);
+}
+
+.login-remember-wrapper .login-forget-password-div {
+}
+
+.login-forget-password-div a {
+  color: blue;
+  text-decoration: none;
+  cursor: default;
+}
+.login-forget-password-div a:hover {
+  text-decoration: underline;
+}
+
+.login-form button {
+  background-color: var(--blue);
+  color: #fff;
+  margin-top: 40px;
+  border: 3px solid var(--blue);
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  font-size: 1.5rem;
+  cursor: default;
+  transition: 0.2s all;
+  width: 100%;
+}
+
+.login-form button:hover {
+  background-color: transparent;
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.login-container .login-facingProblem-div {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.login-facingProblem-div h5 {
+}
+
+.login-facingProblem-div h5 a {
+}
+
+/* BreakPoints */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .login-header {
+    justify-content: center;
+  }
+  .login-header a {
+    left: 40px;
+  }
+  .login-header .login-logo-wrapper {
+    width: 250px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

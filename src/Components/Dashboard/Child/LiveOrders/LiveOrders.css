@@ -1,0 +1,139 @@
+.orders-main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.orders-main .orders-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.orders-container h2 {
+  margin: 10px 0px;
+}
+
+.orders-container .order-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.order-header-wrapper .order-header {
+  background: #fff;
+  border-radius: 1.2rem;
+  border: 2px solid rgb(199, 199, 199);
+  width: 32%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.order-header .icon {
+  font-size: 2.5rem;
+  display: flex;
+  margin-right: 40px;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+.order-header.number-orders .icon {
+  background-color: #fff1cb;
+  color: #feb21d;
+}
+.order-header.pending-order .icon {
+  background-color: #cae4ff;
+  color: #027bfe;
+}
+.order-header.order-dispatch .icon {
+  background-color: #cdf2ed;
+  color: #02baad;
+}
+
+.order-header .title {
+}
+
+.order-header .title h1 {
+}
+
+.order-header .title h4 {
+  color: rgb(119, 119, 119);
+}
+
+.orders-container .order-wrapper {
+}
+
+.order-wrapper table {
+  width: 100%;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  margin-bottom: 100px;
+}
+
+.order-wrapper table thead {
+}
+
+.order-wrapper table thead tr {
+  height: 60px;
+}
+
+.order-wrapper table thead tr th {
+  border-top: 0px solid gray;
+  border-bottom: 0px solid gray;
+  background-color: #00b478;
+}
+
+.order-wrapper table tbody {
+  font-weight: 500;
+}
+
+.order-wrapper table tbody tr {
+  height: 50px;
+  transition: 0.2s all;
+}
+
+.order-wrapper table tbody td {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: #fff;
+}
+
+.order-wrapper table tbody td button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+}
+
+.order-wrapper table .order-type {
+  color: #df4759;
+  font-weight: 700;
+}
+
+.order-wrapper table tr th:first-child,
+.order-wrapper table tr td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-left: 1px solid gray;
+}
+.order-wrapper table tr th:last-child,
+.order-wrapper table tr td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-right: 1px solid gray;
+}
+
+.order-wrapper table tbody tr:hover td {
+  background-color: var(--green);
+  transition: 0.2s all;
+  /* color: #fff; */
+  border: none;
+}

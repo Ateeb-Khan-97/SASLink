@@ -1,0 +1,97 @@
+.footer-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  padding: 50px 0px;
+}
+
+.footer-main .footer-container {
+  width: 90%;
+  display: flex;
+}
+
+.footer-container .footer-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-wrapper .footer-sec1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.footer-sec1 .footer-logo-wrapper {
+  width: 200px;
+  height: 78px;
+}
+
+.footer-logo-wrapper img {
+  height: 100%;
+  width: 100%;
+}
+
+.footer-sec1 .footer-contact {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+.footer-sec1 .footer-phone-div {
+  margin-top: 10px;
+}
+
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+  cursor: default;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-wrapper .footer-sec2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer-sec2 a {
+  color: var(--green);
+  font-size: 2rem;
+  margin: 0px 10px;
+  cursor: default;
+  transition: 0.2s all;
+}
+.footer-sec2 a:hover {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.footer-wrapper .footer-sec3 {
+  width: 100%;
+}
+
+/* BreakPoints */
+
+@media (min-width: 992px) {
+  .footer-wrapper .footer-sec1,
+  .footer-wrapper .footer-sec2,
+  .footer-wrapper .footer-sec3 {
+    width: 33%;
+    margin-bottom: 0px;
+  }
+  .footer-wrapper .footer-sec1 {
+    align-items: flex-start;
+  }
+}
